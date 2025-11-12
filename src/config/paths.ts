@@ -7,9 +7,5 @@ export const paths = {
       path: "",
       getHref: () => "/",
     },
-    works: {
-      path: "works", //  TODO
-      getHref: () => "/works",
-    },
   },
 };

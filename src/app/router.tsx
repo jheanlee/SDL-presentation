@@ -16,13 +16,7 @@ const createAppRouter = () =>
             return { Component: Home };
           },
         },
-        {
-          path: paths.root.works.path,
-          lazy: async () => {
-            const { WorkDemo } = await import("@/app/routes/work"); //  TODO
-            return { Component: WorkDemo };
-          },
-        },
+        
       ],
     },
   ]);
