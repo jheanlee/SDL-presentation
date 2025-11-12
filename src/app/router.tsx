@@ -1,6 +1,31 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { paths } from "@/config/paths.ts";
+import { Root } from "@/app/routes/root.tsx";
 
-const createAppRouter = () => createBrowserRouter([]);
+const createAppRouter = () =>
+  createBrowserRouter([
+    {
+      path: paths.root.path,
+      Component: Root,
+      hydrateFallbackElement: <div>Loading...</div>,
+      children: [
+        {
+          path: paths.root.home.path,
+          lazy: async () => {
+            const { Home } = await import("@/app/routes/home");
+            return { Component: Home };
+          },
+        },
+        {
+          path: paths.root.works.path,
+          lazy: async () => {
+            const { WorkDemo } = await import("@/app/routes/work"); //  TODO
+            return { Component: WorkDemo };
+          },
+        },
+      ],
+    },
+  ]);
 
 export const AppRouter = () => {
   const router = createAppRouter();
