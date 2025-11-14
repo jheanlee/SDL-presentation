@@ -20,23 +20,6 @@ export const Home = () => {
       <div className="grid grid-cols-2 w-full gap-8 p-8">
         <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
           <p>{t("home.theme_description0")}</p>
-<<<<<<< HEAD
-          <p>{t("home.theme_description1")}</p>
-        </div>
-        <div></div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div></div>
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description2")}</p>
-          <p>{t("home.theme_description3")}</p>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description4")}</p>
-          <p>{t("home.theme_description5")}</p>
-=======
         </div>
         <div></div>
       </div>
@@ -49,7 +32,6 @@ export const Home = () => {
       <div className="grid grid-cols-2 w-full gap-8 p-8">
         <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
           <p>{t("home.theme_description2")}</p>
->>>>>>> 581e173e6543bd13ce5a57d5995d5d79bc1c9348
         </div>
         <div></div>
       </div>
