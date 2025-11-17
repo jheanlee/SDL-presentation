@@ -80,7 +80,7 @@ export const Navbar = () => {
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
-                <div />
+                <li />
                 <li>
                   <NavigationMenuLink
                     asChild
@@ -101,7 +101,7 @@ export const Navbar = () => {
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
-                <div />
+                <li />
                 <li>
                   <NavigationMenuLink
                     asChild
