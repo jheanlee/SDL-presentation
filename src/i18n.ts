@@ -8,12 +8,28 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "zh-Hant",
+    supportedLngs: ["en", "ja", "zh-Hant"],
+    fallbackLng: {
+      "zh": ["zh-Hant"],
+      "zh-TW": ["zh-Hant"],
+      "default": ["zh-Hant"]
+    },
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json"
+    },
+    
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+      lookupLocalStorage: "i18nextLng",
+    },
+    
     interpolation: {
       escapeValue: false,
     },
-    backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
-    },
+    
+    react: {
+      useSuspense: true
+    }
   });
 export default i18n;
