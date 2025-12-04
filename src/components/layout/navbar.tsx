@@ -90,7 +90,9 @@ export const Navbar = () => {
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
-                <div />
+                <li>
+                  <div />
+                </li>
                 <li>
                   <NavigationMenuLink
                     asChild
