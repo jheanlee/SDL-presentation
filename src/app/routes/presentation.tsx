@@ -1,3 +1,3 @@
-export const Presentations = () => {
-  return <h1>Presentations</h1>;
+export const Presentation = () => {
+  return <h1>Presentation</h1>;
 };

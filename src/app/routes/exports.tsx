@@ -1,9 +1,0 @@
-export { Posters } from "./posters.tsx";
-export { Stall } from "./stall.tsx";
-export { Presentations } from "./presentation.tsx";
-export { Biology } from "./all_works/biology.tsx";
-export { Chemistry } from "./all_works/chemistry.tsx";
-export { Engineering } from "./all_works/engineering.tsx";
-export { Medicine } from "./all_works/medicine.tsx";
-export { PoliticsAndEconomics } from "./all_works/politics_and_economics.tsx";
-export { Society } from "./all_works/society.tsx";
