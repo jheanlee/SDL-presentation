@@ -11,7 +11,7 @@
   "navbar.outcome_exhibition.all_works": "All Works",
   "navbar.outcome_exhibition.presentation": "Presentation",
   "navbar.outcome_exhibition.stall": "Stall",
-  "navbar.outcome_exhibition.poster": "Poster",
+  "navbar.outcome_exhibition.posters": "Poster",
   "navbar.outcome_exhibition.medicine": "Medicine",
   "navbar.outcome_exhibition.biology": "Biology",
   "navbar.outcome_exhibition.engineering": "Engineering",
@@ -19,5 +19,6 @@
   "navbar.outcome_exhibition.society": "Society",
   "navbar.outcome_exhibition.politics_and_economics": "Political and Economics",
   "navbar.about_outcome_exhibition": "About",
-  "navbar.staff_list": "Staff List"
+  "navbar.staff_list": "Staff List",
+  "navbar.music_video": "Music video"
 }
