@@ -86,7 +86,7 @@ export const Navbar = () => {
                     className={navigationMenuTriggerStyle()}
                   >
                     <NavLink to={paths.root.posters.getHref()}>
-                      {t("navbar.outcome_exhibition.posters")}
+                      {t("navbar.outcome_exhibition.poster")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
