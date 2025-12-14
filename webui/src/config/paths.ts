@@ -72,6 +72,6 @@ export const paths = {
     resources: {
       path: "/resources",
       getHref: () => "/resources",
-    }
+    },
   },
 };

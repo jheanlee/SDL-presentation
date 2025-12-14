@@ -2,7 +2,6 @@ import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
 
 @Entity()
 export class Link {
-
   @PrimaryKey({ length: 21 })
   id!: string; //  nanoid
 
@@ -14,5 +13,4 @@ export class Link {
 
   @Property()
   createdDate!: Date;
-
 }
