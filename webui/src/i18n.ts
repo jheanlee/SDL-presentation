@@ -10,26 +10,26 @@ i18n
   .init({
     supportedLngs: ["en", "ja", "zh-Hant"],
     fallbackLng: {
-      "zh": ["zh-Hant"],
+      zh: ["zh-Hant"],
       "zh-TW": ["zh-Hant"],
-      "default": ["zh-Hant"]
+      default: ["zh-Hant"],
     },
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json"
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
-    
+
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
       lookupLocalStorage: "i18nextLng",
     },
-    
+
     interpolation: {
       escapeValue: false,
     },
-    
+
     react: {
-      useSuspense: true
-    }
+      useSuspense: true,
+    },
   });
 export default i18n;

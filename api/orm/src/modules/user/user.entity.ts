@@ -1,10 +1,9 @@
-import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
+import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
 
 @Entity()
 export class User {
-
   @PrimaryKey({ length: 21 })
-  id!: string;  //  nanoid
+  id!: string; //  nanoid
 
   @Property({ type: "text" })
   username!: string;
@@ -17,5 +16,4 @@ export class User {
 
   @Property()
   admin!: boolean;
-
 }

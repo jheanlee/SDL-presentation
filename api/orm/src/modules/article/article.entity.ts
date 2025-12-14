@@ -1,10 +1,9 @@
-import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
+import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
 
 @Entity()
 export class Article {
-
   @PrimaryKey({ length: 21 })
-  id!: string;  //  nanoid
+  id!: string; //  nanoid
 
   @Property({ type: "text" })
   title!: string;
@@ -17,5 +16,4 @@ export class Article {
 
   @Property({ type: "text" })
   link!: string;
-
 }

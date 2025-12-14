@@ -13,7 +13,7 @@ export const paths = {
       getHref: () => "/presentation",
     },
 
-    stall: {
+    booth: {
       path: "stall",
       getHref: () => "/stall",
     },
@@ -72,6 +72,6 @@ export const paths = {
     resources: {
       path: "/resources",
       getHref: () => "/resources",
-    }
+    },
   },
 };

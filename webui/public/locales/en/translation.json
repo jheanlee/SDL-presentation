@@ -1,35 +1,31 @@
 {
-  "home.title": "Taipei Wego Senior High School Self-Directed Study Outcome Display",
+  "home.title": "2026 Taipei Wego Senior High School Self-Directed Study Outcome Display",
   "home.exhibited_works_introduction": "Exhibited Works",
   "home.all_works": "All Works",
   "home.theme_description0": "waiting for update",
   "home.theme_description1": "waiting for update",
   "home.theme_description2": "waiting for update",
-
   "navbar.home": "Home",
   "navbar.outcome_exhibition": "Outcome Exhibition",
   "navbar.outcome_exhibition.exhibition": "Exhibition",
   "navbar.outcome_exhibition.all_works": "All Works",
   "navbar.outcome_exhibition.presentation": "Presentation",
-  "navbar.outcome_exhibition.stall": "Stall",
+  "navbar.outcome_exhibition.booth": "Booth",
   "navbar.outcome_exhibition.poster": "Poster",
   "navbar.outcome_exhibition.medicine": "Medicine",
   "navbar.outcome_exhibition.biology": "Biology",
   "navbar.outcome_exhibition.engineering": "Engineering",
   "navbar.outcome_exhibition.chemistry": "Chemistry",
   "navbar.outcome_exhibition.society": "Society",
-  "navbar.outcome_exhibition.politics_and_economics": "Political and Economics",
+  "navbar.outcome_exhibition.politics_and_economics": "Politics and Economics",
   "navbar.resources": "Resources",
   "navbar.about_outcome_exhibition": "About",
   "navbar.staff_list": "Staff List",
-
   "about.description_0": "waiting for update",
-
   "staff.coordinator_group.title": "Coordinator Group",
   "staff.coordinator_group.members": "waiting for update",
   "staff.art_group.title": "Art Group",
   "staff.art_group.members": "waiting for update",
-
   "presentation.biology.items.1": "Biology group",
   "presentation.biology.articles.1": "Article"
 }

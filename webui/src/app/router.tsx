@@ -24,10 +24,10 @@ const createAppRouter = () =>
           },
         },
         {
-          path: paths.root.stall.path,
+          path: paths.root.booth.path,
           lazy: async () => {
-            const { Stall } = await import("@/app/routes/stall");
-            return { Component: Stall };
+            const { Booth } = await import("@/app/routes/booth");
+            return { Component: Booth };
           },
         },
         {
