@@ -5,11 +5,11 @@ export const Staff = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full h-full ml-5">
+    <div className="w-full h-full pl-5">
       <div className="grid gap-20 mt-5 mb-10 text-3xl text-stone-700 dark:text-stone-300 justify-items-left text-left break-keep">
         <h1 className="whitespace-pre-wrap">{t("navbar.staff_list")}</h1>
       </div>
-      <ul className="ml-8 mb-5 grid break-keep text-stone-700 dark:text-stone-300 justify-items-left text-left break-keep">
+      <ul className="ml-8 mb-5 grid text-stone-700 dark:text-stone-300 justify-items-left text-left break-keep">
         <li>
           <StaffItem group={"coordinator_group"} />
         </li>

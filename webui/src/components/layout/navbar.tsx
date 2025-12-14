@@ -192,7 +192,6 @@ export const Navbar = () => {
       </NavigationMenu>
 
       <div className="flex align-middle gap-2">
-        {/* TODO language selection */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost">
