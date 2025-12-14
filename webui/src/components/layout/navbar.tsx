@@ -25,7 +25,7 @@ export const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="w-full flex flex-row justify-between p-3">
+    <div className="hidden md:flex w-full flex-row justify-between p-3">
       <NavigationMenu viewport={false}>
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -38,7 +38,7 @@ export const Navbar = () => {
               </NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className="hidden md:block">
+          <NavigationMenuItem>
             <NavigationMenuTrigger>
               {t("navbar.outcome_exhibition")}
             </NavigationMenuTrigger>
@@ -75,8 +75,8 @@ export const Navbar = () => {
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
-                    <NavLink to={paths.root.stall.getHref()}>
-                      {t("navbar.outcome_exhibition.stall")}
+                    <NavLink to={paths.root.booth.getHref()}>
+                      {t("navbar.outcome_exhibition.booth")}
                     </NavLink>
                   </NavigationMenuLink>
                 </li>
