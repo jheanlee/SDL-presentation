@@ -3,16 +3,15 @@
 use sea_orm::entity::prelude::*;
 use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Debug, PartialEq, Eq, DeriveEntityModel, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Eq, DeriveEntityModel)]
 #[sea_orm(table_name = "article")]
 pub struct Model {
     #[sea_orm(primary_key, auto_increment = false)]
     pub id: String,
     #[sea_orm(column_type = "Text")]
     pub title: String,
-    #[sea_orm(column_type = "Text")]
-    pub author: String,
-    pub author_id: String,
+    pub author: Vec<String>,
+    pub author_id: Vec<String>,
     #[sea_orm(column_type = "Text")]
     pub summary: String,
     #[sea_orm(column_type = "Text")]
@@ -23,7 +22,6 @@ pub struct Model {
     #[sea_orm(column_type = "JsonBinary")]
     pub multilanguage: Json,
 }
-
 #[derive(Copy, Clone, Debug, EnumIter, DeriveRelation)]
 pub enum Relation {}
 
