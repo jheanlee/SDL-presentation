@@ -1,1 +1,0 @@
-//import {getArticle} from "@/services/client.ts";
