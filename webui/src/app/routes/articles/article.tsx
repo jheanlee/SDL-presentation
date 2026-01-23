@@ -8,7 +8,6 @@ import { Separator } from "@/components/ui/separator.tsx";
 
 export const ArticleWrapper = () => {
   const path = useParams();
-  console.log(path.articleId);
   if (path.articleId && path.articleId.match(/^[a-zA-Z0-9_-]{21}$/)) {
     return <Article id={path.articleId} />;
   } else {
@@ -88,8 +87,24 @@ export const Article = ({ id }: ArticleProps) => {
             </div>
           </div>
           <Separator />
-          <div className="w-full">
-            <p className="mx-2 text-justify">{articleInfo.contents}</p>
+          <div className="flex justify-center w-full">
+            {articleInfo.contents.startsWith("https://www.canva.com") ? (
+              <div className="relative w-full h-0 pt-[56.25%] pb-0 shadow-[0_2px_8px_0_rgba(63,69,81,0.16)] mt-[1.6em] mb-[0.9em] overflow-hidden border-r-8 will-change-transform">
+                <iframe
+                  loading="lazy"
+                  className="absolute w-full h-full top-0 left-0 border-0 p-0 m-0"
+                  src={`${articleInfo.contents}?embed`}
+                  allow="fullscreen"
+                />
+              </div>
+            ) : (
+              <iframe
+                loading="lazy"
+                className="w-full h-screen"
+                src={`https://docs.google.com/gview?url=${articleInfo.contents}&embedded=true`}
+                allow="fullscreen"
+              />
+            )}
           </div>
         </div>
       )}
