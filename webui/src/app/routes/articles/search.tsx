@@ -103,7 +103,7 @@ export const ArticleSearch = () => {
                       })()}
                     </p>
                   </div>
-                  <p className="text-sm text-stone-500">
+                  <p className="text-sm light:text-stone-600 dark:text-stone-400">
                     {(() => {
                       if (i18n.language == "zh-Hant" || i18n.language == "ja") {
                         return article.tags.join("、");

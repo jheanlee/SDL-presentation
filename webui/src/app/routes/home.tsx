@@ -2,10 +2,12 @@ import { Button } from "@/components/ui/button.tsx";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router";
 import { paths } from "@/config/paths.ts";
+import { useTheme } from "@/components/theme/theme-provider.tsx";
 
 export const Home = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { theme } = useTheme();
 
   return (
     <div className="w-full h-full">
@@ -21,35 +23,28 @@ export const Home = () => {
           </Button>
         </div>
       </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description0")}</p>
+      <div className="relative w-full overflow-hidden">
+        {theme === "light" && (
+          <img
+            src="/images/poster_light.png"
+            className="absolute inset-0 -z-10 w-full h-full object-cover grayscale-30 brightness-120 blur-md"
+          />
+        )}
+        {theme === "dark" && (
+          <img
+            src="/images/poster_dark.png"
+            className="absolute inset-0 -z-10 w-full h-full object-cover brightness-40 max-h-300 blur-sm"
+          />
+        )}
+        <div className="relative flex items-center justify-center p-8">
+          <div className="flex flex-col w-4/5 gap-8 md:gap-20 my-8 md:my-30 text-md md:text-lg text-stone-600 dark:text-stone-400 text-justify">
+            <p>{t("home.theme_description0")}</p>
+            <p>{t("home.theme_description1")}</p>
+            <p>{t("home.theme_description2")}</p>
+            <p>{t("home.theme_description3")}</p>
+            <p>{t("home.theme_description4")}</p>
+          </div>
         </div>
-        <div></div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div></div>
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description1")}</p>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description2")}</p>
-        </div>
-        <div></div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div></div>
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description1")}</p>
-        </div>
-      </div>
-      <div className="grid grid-cols-2 w-full gap-8 p-8">
-        <div className="grid gap-5 text-xl text-stone-600 dark:text-stone-400 text-justify content-center">
-          <p>{t("home.theme_description2")}</p>
-        </div>
-        <div></div>
       </div>
     </div>
   );
