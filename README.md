@@ -3,7 +3,7 @@
 Languages: English, [繁體中文](README_zh.md)
 
 This repository contains the source files for the website of 2026 Taipei Wego Private Senior High School Grade 11
-Self-Directed Learning Outcome Exhibition. It includes two independent works:
+Self-Directed Learning Outcome Exhibition. It includes multiple independent works:
 
 | Work                     | Description                                     |
 |--------------------------|-------------------------------------------------|
@@ -29,3 +29,9 @@ see https://www.gnu.org/licenses/.
 
 The copyright holders for each work (program) are documented in the corresponding `COPYRIGHT.md` file within its
 directory.
+
+## Clarification on Media Assets
+
+The AGPL-3.0 license applies to the source code files in this repository. However, all images, videos, and documents
+located in the `webui/public` directory are All Rights Reserved by their respective authors and are excluded from the AGPL-3.0
+license.

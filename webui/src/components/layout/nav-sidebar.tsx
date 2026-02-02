@@ -69,6 +69,13 @@ export const NavSidebar = () => {
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem key="license">
+                  <SidebarMenuButton asChild>
+                    <NavLink to={paths.root.license.getHref()}>
+                      {t("navbar.license")}
+                    </NavLink>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>

@@ -31,6 +31,13 @@ const createAppRouter = () =>
           },
         },
         {
+          path: paths.root.license.path,
+          lazy: async () => {
+            const { License } = await import("@/app/routes/license");
+            return { Component: License };
+          },
+        },
+        {
           path: paths.root.resources.path,
           lazy: async () => {
             const { Resources } = await import("@/app/routes/resources");
