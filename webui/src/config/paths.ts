@@ -33,5 +33,10 @@ export const paths = {
       path: "resources",
       getHref: () => "/resources",
     },
+
+    license: {
+      path: "license",
+      getHref: () => "/license",
+    },
   },
 };

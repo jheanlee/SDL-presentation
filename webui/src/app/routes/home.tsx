@@ -24,12 +24,12 @@ export const Home = () => {
         </div>
       </div>
       <div className="relative w-full overflow-hidden">
-        {theme === "light" && (
-          <img
-            src="/images/poster_light.png"
-            className="absolute inset-0 -z-10 w-full h-full object-cover grayscale-30 brightness-120 blur-md"
-          />
-        )}
+        {/*{theme === "light" && (*/}
+        {/*  <img*/}
+        {/*    src="/images/poster_light.png"*/}
+        {/*    className="absolute inset-0 -z-10 w-full h-full object-cover grayscale-30 brightness-120 blur-md"*/}
+        {/*  />*/}
+        {/*)}*/}
         {theme === "dark" && (
           <img
             src="/images/poster_dark.png"
