@@ -5,7 +5,7 @@ export const License = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full h-full p-10 break-keep">
+    <div className="w-full h-full p-10 break-keep text-justify">
       <div className="w-full flex flex-col gap-2">
         <p className="text-lg">{t("license.frontend")}</p>
         <p className="ml-4">{t("license.frontend.members")}</p>

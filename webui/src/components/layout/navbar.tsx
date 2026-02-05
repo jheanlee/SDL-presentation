@@ -46,26 +46,26 @@ export const Navbar = () => {
               </NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <NavLink to={paths.root.resources.getHref()}>
-                {t("navbar.resources")}
-              </NavLink>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              asChild
-              className={navigationMenuTriggerStyle()}
-            >
-              <NavLink to={paths.root.about.getHref()}>
-                {t("navbar.about_outcome_exhibition")}
-              </NavLink>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
+          {/*<NavigationMenuItem>*/}
+          {/*  <NavigationMenuLink*/}
+          {/*    asChild*/}
+          {/*    className={navigationMenuTriggerStyle()}*/}
+          {/*  >*/}
+          {/*    <NavLink to={paths.root.resources.getHref()}>*/}
+          {/*      {t("navbar.resources")}*/}
+          {/*    </NavLink>*/}
+          {/*  </NavigationMenuLink>*/}
+          {/*</NavigationMenuItem>*/}
+          {/*<NavigationMenuItem>*/}
+          {/*  <NavigationMenuLink*/}
+          {/*    asChild*/}
+          {/*    className={navigationMenuTriggerStyle()}*/}
+          {/*  >*/}
+          {/*    <NavLink to={paths.root.about.getHref()}>*/}
+          {/*      {t("navbar.about_outcome_exhibition")}*/}
+          {/*    </NavLink>*/}
+          {/*  </NavigationMenuLink>*/}
+          {/*</NavigationMenuItem>*/}
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild

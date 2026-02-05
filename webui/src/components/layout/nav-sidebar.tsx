@@ -48,20 +48,20 @@ export const NavSidebar = () => {
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
-                <SidebarMenuItem key="resources">
-                  <SidebarMenuButton asChild>
-                    <NavLink to={paths.root.resources.getHref()}>
-                      {t("navbar.resources")}
-                    </NavLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem key="about">
-                  <SidebarMenuButton asChild>
-                    <NavLink to={paths.root.about.getHref()}>
-                      {t("navbar.about_outcome_exhibition")}
-                    </NavLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
+                {/*<SidebarMenuItem key="resources">*/}
+                {/*  <SidebarMenuButton asChild>*/}
+                {/*    <NavLink to={paths.root.resources.getHref()}>*/}
+                {/*      {t("navbar.resources")}*/}
+                {/*    </NavLink>*/}
+                {/*  </SidebarMenuButton>*/}
+                {/*</SidebarMenuItem>*/}
+                {/*<SidebarMenuItem key="about">*/}
+                {/*  <SidebarMenuButton asChild>*/}
+                {/*    <NavLink to={paths.root.about.getHref()}>*/}
+                {/*      {t("navbar.about_outcome_exhibition")}*/}
+                {/*    </NavLink>*/}
+                {/*  </SidebarMenuButton>*/}
+                {/*</SidebarMenuItem>*/}
                 <SidebarMenuItem key="staff_list">
                   <SidebarMenuButton asChild>
                     <NavLink to={paths.root.staff.getHref()}>
