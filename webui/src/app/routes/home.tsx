@@ -23,7 +23,7 @@ export const Home = () => {
           </Button>
         </div>
       </div>
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden -z-10">
         {/*{theme === "light" && (*/}
         {/*  <img*/}
         {/*    src="/images/poster_light.png"*/}
@@ -33,7 +33,7 @@ export const Home = () => {
         {theme === "dark" && (
           <img
             src="/images/poster_dark.png"
-            className="absolute inset-0 -z-10 w-full h-full object-cover brightness-40 max-h-300 blur-sm"
+            className="absolute inset-0 w-full h-full object-cover brightness-40 max-h-300 blur-sm"
           />
         )}
         <div className="relative flex items-center justify-center p-8">

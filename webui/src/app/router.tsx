@@ -16,13 +16,13 @@ const createAppRouter = () =>
             return { Component: Home };
           },
         },
-        {
-          path: paths.root.about.path,
-          lazy: async () => {
-            const { About } = await import("@/app/routes/about");
-            return { Component: About };
-          },
-        },
+        // {
+        //   path: paths.root.about.path,
+        //   lazy: async () => {
+        //     const { About } = await import("@/app/routes/about");
+        //     return { Component: About };
+        //   },
+        // },
         {
           path: paths.root.staff.path,
           lazy: async () => {
@@ -37,13 +37,13 @@ const createAppRouter = () =>
             return { Component: License };
           },
         },
-        {
-          path: paths.root.resources.path,
-          lazy: async () => {
-            const { Resources } = await import("@/app/routes/resources");
-            return { Component: Resources };
-          },
-        },
+        // {
+        //   path: paths.root.resources.path,
+        //   lazy: async () => {
+        //     const { Resources } = await import("@/app/routes/resources");
+        //     return { Component: Resources };
+        //   },
+        // },
         {
           path: paths.root.articleSearch.path,
           lazy: async () => {

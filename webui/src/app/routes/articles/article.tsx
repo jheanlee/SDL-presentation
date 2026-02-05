@@ -88,22 +88,26 @@ export const Article = ({ id }: ArticleProps) => {
           </div>
           <Separator />
           <div className="flex justify-center w-full">
-            {articleInfo.contents.startsWith("https://www.canva.com") ? (
-              <div className="relative w-full h-0 pt-[56.25%] pb-0 shadow-[0_2px_8px_0_rgba(63,69,81,0.16)] mt-[1.6em] mb-[0.9em] overflow-hidden border-r-8 will-change-transform">
+            {articleInfo.contents.length > 0 &&
+              (articleInfo.contents.startsWith("https://www.canva.com") ? (
+                <div className="relative w-full h-0 pt-[56.25%] pb-0 shadow-[0_2px_8px_0_rgba(63,69,81,0.16)] mt-[1.6em] mb-[0.9em] overflow-hidden border-r-8 will-change-transform">
+                  <iframe
+                    loading="lazy"
+                    className="absolute w-full h-full top-0 left-0 border-0 p-0 m-0"
+                    src={`${articleInfo.contents}?embed`}
+                    allow="fullscreen"
+                  />
+                </div>
+              ) : (
                 <iframe
                   loading="lazy"
-                  className="absolute w-full h-full top-0 left-0 border-0 p-0 m-0"
-                  src={`${articleInfo.contents}?embed`}
+                  className="w-full h-screen"
+                  src={`https://docs.google.com/gview?url=${articleInfo.contents}&embedded=true`}
                   allow="fullscreen"
                 />
-              </div>
-            ) : (
-              <iframe
-                loading="lazy"
-                className="w-full h-screen"
-                src={`https://docs.google.com/gview?url=${articleInfo.contents}&embedded=true`}
-                allow="fullscreen"
-              />
+              ))}
+            {articleInfo.contents.length === 0 && (
+              <p>作品未公開 This work is not publicly available.</p>
             )}
           </div>
         </div>
