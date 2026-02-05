@@ -76,6 +76,16 @@ export const Navbar = () => {
               </NavLink>
             </NavigationMenuLink>
           </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className={navigationMenuTriggerStyle()}
+            >
+              <NavLink to={paths.root.license.getHref()}>
+                {t("navbar.license")}
+              </NavLink>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
 
