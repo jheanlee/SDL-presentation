@@ -13,7 +13,7 @@ export const StaffItem = ({ group }: groupProps) => {
       <div className="ml-4">
           <div className="text-sm">{group === 'coordinator' ? t(`staff.coordinator_group.leader.title`) :  t(`staff.group.leader.title`)}</div>
           <div className="ml-2 text-md">{t(`staff.${group}_group.leaders`)}</div>
-          <div className="text-sm mt-2">{group === 'coordinator' ? t(`staff.coordinator_group.members.title`) : t(`staff.group.members.title`)}</div>
+          <div className="text-sm mt-2">{t(`staff.group.members.title`)}</div>
           <div className="ml-2 text-md">{t(`staff.${group}_group.members`)}</div>
       </div>
       <Separator className="my-4"/>
